@@ -12,7 +12,7 @@
   "plugins": [
     {
       "name": "starter-simple",
-      "source": "./plugins/starter-simple",
+      "source": "plugins/starter-simple",
       "description": "Minimal plugin with rules and skills only"
     },
     {
