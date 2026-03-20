@@ -2,7 +2,7 @@
   "name": "starter-advanced",
   "displayName": "Sedapta Core Internal",
   "version": "0.1.0",
-  "description": "Full-featured Cursor plugin for sedapta core development",
+  "description": "Cursor plugin for sedapta core development",
   "author": {
     "name": "Sedapta",
     "email": "claudio.raggio@sedapta.com"

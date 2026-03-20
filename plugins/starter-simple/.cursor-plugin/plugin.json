@@ -2,7 +2,7 @@
   "name": "starter-simple",
   "displayName": "Sedapta Core Public",
   "version": "0.1.0",
-  "description": "Minimal Cursor plugin for sedapta core usage",
+  "description": "Cursor plugin for sedapta core usage",
   "author": {
     "name": "Sedapta",
     "email": "claudio.raggio@sedapta.com"
