@@ -1,11 +1,28 @@
 ---
-description: Baseline coding standards for readable, maintainable changes
+description: TypeScript conventions, tsconfig path aliases, import hygiene, Core sample localization, and English for rules, skills, and code comments.
 alwaysApply: true
 ---
 
-coding-standards:
+## Language
 
-- Prefer small, focused changes with a clear purpose.
-- Use descriptive names for functions, variables, and files.
-- Add concise comments only when non-obvious logic needs context.
-- Keep user-facing documentation updated when behavior changes.
+- **Cursor rules and skills:** Write all content in **English** in `.cursor/rules` and `.cursor/skills` (including descriptions, headings, and bullet text).
+- **Source code:** Write all **comments** in English (`//`, `/* */`, and JSDoc). User-facing copy follows localization files and product language rules, not this bullet.
+
+## TypeScript (project-wide)
+
+- Do NOT use inline or dynamic type imports (e.g. `import("./module").TypeName`). Use top-level `import` or `import type { TypeName } from "./module"` at the top of the file instead.
+
+## Imports and paths
+
+- Do **not** change `compilerOptions.paths` in `tsconfig.json` unless the task explicitly requires it.
+- Prefer **path aliases** defined in `tsconfig.json` (e.g. `@sedapta/core/model`, `@sedapta/core/widgets`, `@sedapta/elisa`, `@sedapta/dev`, `@sedapta/cube`, `@sedapta/test`) instead of long relative paths, whenever a matching alias exists for the symbol you need.
+- Import from **public API** entry points (`public-api.ts` or the path mapped in `paths`) rather than deep internal file paths inside libraries, unless the codebase already does otherwise in that area.
+- Avoid **circular dependencies**: do not create import cycles between modules; refactor shared types or utilities to a neutral module, or use the public API layer, so dependency graphs stay acyclic.
+- When something changes under `projects/sedapta-core/model` (new exports, moved or renamed symbols), update `projects/sedapta-core/model/public-api.ts` so the public API stays in sync.
+
+## Localization (Core sample)
+
+- Always use **Sentence case** for user-visible labels when adding or editing entries in the Core localization JSON files (paths relative to this workspace root, `ClientApp`):
+  - `../../SedApta.Core.Presentation.AspNetCore.Sample.WebApp/App_Data/Localization/en-US/Core.json`
+  - `../../SedApta.Core.Presentation.AspNetCore.Sample.WebApp/App_Data/Localization/en-GB/Core.json`
+  - `../../SedApta.Core.Presentation.AspNetCore.Sample.WebApp/App_Data/Localization/it-IT/Core.json`
