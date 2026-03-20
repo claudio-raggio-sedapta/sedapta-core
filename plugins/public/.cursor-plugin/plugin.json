@@ -1,13 +1,13 @@
 {
-  "name": "public",
-  "displayName": "Sedapta Core Public",
+  "name": "starter-simple",
+  "displayName": "Simple Starter",
   "version": "0.1.0",
-  "description": "Sedapta Core Public",
+  "description": "Minimal Cursor plugin starter with rules and skills.",
   "author": {
-    "name": "Sedapta",
-    "email": "info@sedapta.com"
+    "name": "Your Org",
+    "email": "plugins@example.com"
   },
   "license": "MIT",
-  "keywords": ["sedapta", "core", "public"],
+  "keywords": ["cursor", "plugin", "rules", "skills"],
   "logo": "assets/logo.svg"
 }

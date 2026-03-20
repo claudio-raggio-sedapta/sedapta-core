@@ -1,13 +1,13 @@
 {
-  "name": "internal",
-  "displayName": "Sedapta Core Internal",
+  "name": "starter-advanced",
+  "displayName": "Advanced Starter",
   "version": "0.1.0",
-  "description": "Sedapta Core Internal",
+  "description": "Full-featured Cursor plugin starter with rules, skills, agents, commands, hooks, and MCP.",
   "author": {
-    "name": "Sedapta",
-    "email": "info@sedapta.com"
+    "name": "Your Org",
+    "email": "plugins@example.com"
   },
   "license": "MIT",
-  "keywords": ["sedapta", "core", "internal"],
+  "keywords": ["cursor", "plugin", "rules", "skills", "agents", "commands", "hooks", "mcp"],
   "logo": "assets/logo.svg"
 }
