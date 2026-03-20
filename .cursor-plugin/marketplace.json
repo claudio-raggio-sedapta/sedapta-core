@@ -11,13 +11,13 @@
   },
   "plugins": [
     {
-      "name": "Sedapta Core Public",
-      "source": "public",
+      "name": "starter-simple",
+      "source": "starter-simple",
       "description": "Minimal plugin with rules and skills only"
     },
     {
-      "name": "Sedapta Core Internal",
-      "source": "internal",
+      "name": "starter-advanced",
+      "source": "starter-advanced",
       "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
     }
   ]
