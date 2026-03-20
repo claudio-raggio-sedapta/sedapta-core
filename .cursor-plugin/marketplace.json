@@ -1,24 +1,24 @@
 {
-  "name": "sedapta-core",
+  "name": "cursor-plugin-starters",
   "owner": {
-    "name": "Sedapta",
-    "email": "claudio.raggio@sedapta.com"
+    "name": "Your Org",
+    "email": "plugins@example.com"
   },
   "metadata": {
-    "description": "Sedapta Core Cusor Plugin",
+    "description": "Starter marketplace template for Cursor plugins",
     "version": "0.1.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
     {
-      "name": "Sedapta Core Public",
+      "name": "starter-simple",
       "source": "starter-simple",
-      "description": "Sedapta Core Public"
+      "description": "Minimal plugin with rules and skills only"
     },
     {
-      "name": "Sedapta Core Internal",
+      "name": "starter-advanced",
       "source": "starter-advanced",
-      "description": "Sedapta Core Internal"
+      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
     }
   ]
 }
